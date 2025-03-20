@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header {
+    background-color: rgba(19, 25, 19, 0.256);
+    padding: 15px;
+}
+
+/* logo */
+.size-logo {
+    width: 60px;
+}
+
+/*Section avec la banner en fond*/
+section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/McDo/images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*container du menu*/
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+/*style des boutons*/
+
+.menu-item {
+    width: 19%;
+    height: 15vh;
+    background-color: rgba(28, 38, 18, 0.746);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgb(37, 123, 47);
+    transform: scale(1.1);
+}
+
+/*taille des icones */
+.menu-item img {
+    width: 95%;
+    height: 81%;
+    margin-bottom: 2px;
+    border-radius: 15px;
+}
+
+/*footer*/
+.footer {
+    text-align: center;
+    padding: 1%;
+    background-color: white;
+}
+
+p {
+    font-size: 1.5rem;
+    color: green;
+}
