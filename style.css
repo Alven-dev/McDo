@@ -81,3 +81,7 @@ p {
 .size-img {
     max-width: 80px;
 }
+
+.hiddenmodal{
+    display: none;
+}
