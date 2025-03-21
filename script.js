@@ -26,37 +26,34 @@ let cmdBtn = document.getElementById("command-btn");
 let backBtn = document.getElementById("back-btn");
 let btnMenu = document.getElementById("btnMenu");
 
-function DisplayModal1() {
-    cmdBtn.addEventListener("click", function () {
+function DisplayModal1(){
+    cmdBtn.addEventListener("click", function() {
         if (modalOne.classList.contains("hiddenmodal")) {
-            modalOne.classList.remove("hiddenmodal");
-        }
+            modalOne.classList.remove("hiddenmodal")
+        } 
     });
-}
+};
 
-function Backhomepage() {
+
+
+function Backhomepage(){
     if (!modalOne.classList.contains("hiddenmodal")) {
-        modalOne.classList.add("hiddenmodal");
+        modalOne.classList.add("hiddenmodal")
     }
-}
+};
 
-function displayModal2() {
-    if (modalTwo.classList.contains("hiddenmodal")) {
-        modalTwo.classList.remove("hiddenmodal");
-        modalOne.classList.add("hiddenmodal");
-    }
-}
+function displayModal2(){
+    modalTwo.addEventListener("click", function() {
+        if (modalTwo.classList.contains("hiddenmodal")) {
+            modalTwo.classList.remove("hiddenmodal")
+            modalOne.classList.add("hiddenmodal");
+        }
+    })
+};
 
-function BackModal1() {
-    modalTwo.classList.add("hiddenmodal");
-    modalOne.classList.remove("hiddenmodal");
-}
-
-// Add event listeners
-btnMenu.addEventListener("click", displayModal2);
-cmdBtn.addEventListener("click", DisplayModal1);
-backBtn.addEventListener("click", Backhomepage);
-
+function BackModal1(){
+    document.getElementById("Modal2").classList.add("hiddenmodal")
+};
 /*Code card minature
 <div class="card" style="width: 18rem;">
     <img src="" class="card-img-top" alt="Image du produit">
@@ -82,4 +79,3 @@ backBtn.addEventListener("click", Backhomepage);
 </div>
 */
 
-123
