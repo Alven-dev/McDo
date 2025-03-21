@@ -21,39 +21,41 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
 //FUNCTIONS
 
 let modalOne = document.getElementById("modal1");
-let modalTwo = document.getElementById("modal2");
-let cmdBtn = document.getElementById("command-btn");
-let backBtn = document.getElementById("back-btn");
-let btnMenu = document.getElementById("btnMenu");
+    let modalTwo = document.getElementById("modal2");
+    let cmdBtn = document.getElementById("command-btn");
+    let backBtn = document.getElementById("back-btn");
+    let btnMenu = document.getElementById("btnMenu");
 
-function DisplayModal1(){
-    cmdBtn.addEventListener("click", function() {
-        if (modalOne.classList.contains("hiddenmodal")) {
-            modalOne.classList.remove("hiddenmodal")
-        } 
-    });
-};
-
-
-
-function Backhomepage(){
-    if (!modalOne.classList.contains("hiddenmodal")) {
-        modalOne.classList.add("hiddenmodal")
+    function DisplayModal1() {
+        cmdBtn.addEventListener("click", function () {
+            if (modalOne.classList.contains("hiddenmodal")) {
+                modalOne.classList.remove("hiddenmodal");
+            }
+        });
     }
-};
 
-function displayModal2(){
-    modalTwo.addEventListener("click", function() {
-        if (modalTwo.classList.contains("hiddenmodal")) {
-            modalTwo.classList.remove("hiddenmodal")
+    function Backhomepage() {
+        if (!modalOne.classList.contains("hiddenmodal")) {
             modalOne.classList.add("hiddenmodal");
         }
-    })
-};
+    }
 
-function BackModal1(){
-    document.getElementById("Modal2").classList.add("hiddenmodal")
-};
+    function displayModal2() {
+        if (modalTwo.classList.contains("hiddenmodal")) {
+            modalTwo.classList.remove("hiddenmodal");
+            modalOne.classList.add("hiddenmodal");
+        }
+    }
+
+    function BackModal1() {
+        modalTwo.classList.add("hiddenmodal");
+        modalOne.classList.remove("hiddenmodal");
+    }
+
+    // Add event listeners
+    btnMenu.addEventListener("click", displayModal2);
+    cmdBtn.addEventListener("click", DisplayModal1);
+    backBtn.addEventListener("click", Backhomepage);
 /*Code card minature
 <div class="card" style="width: 18rem;">
     <img src="" class="card-img-top" alt="Image du produit">
