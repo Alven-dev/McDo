@@ -106,6 +106,65 @@
 
 	</div>
 
+
+	<!--Modal voir panier-->
+	<section class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="card">
+					<div class="card-header bg-warning text-white text-center">
+						<h5 class="fw-bold">Votre panier</h5>
+					</div>
+					<!--structure liste des articles dynamique-->
+					<div class="card-body">
+						<ul class="list-group list-group-flush">
+							<!--les données seront injectés dynamiquement-->
+						</ul>
+					</div>
+
+					<div class="card-footer d-flex justify-content-betweeen align-items-center">
+						<h5 class="fw-bold">Total : <!--Injecté dynamiquement-->
+							<span><!--Injecté dynamiquement--></span>
+						</h5>
+						<button class="btn btn-success">Commander</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Modal paiement-->
+	<section class="container my-5">
+		<h2 class="tex-center mb-4 text-success">Passer au paiement</h2>
+		<div class="card p-4">
+			<form>
+				<!--Nom du titulaire-->
+				<div class="mb-3">
+					<label for="nom" class="form-label">Nom du titulaire</label>
+					<input type="text" class="form-control" id="nomTitulaire" placeholder="Votre nom">
+				</div>
+
+				<!--Numéro de carte-->
+				<div class="mb-3">
+					<label for="numberCarte" class="form-label">Numero carte</label>
+					<input type="text" class="form-control" id="numberCarte" placeholder="**** **** **** ****">
+				</div>
+
+				<!--Date d'expriration et CVV-->
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label for="expiration" class="form-label">Date d'expiration</label>
+						<input type="text" class="form-control" id="expiration" placeholder="MM/AA">
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="cvv" class="form-label">CVV</label>
+						<input type="text" class="form-control" id="cvv" placeholder="***">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success py-2">Payer maintenant</button>
+			</form>
+		</div>
+	</section>
 </body>
 <script src="/script.js"></script>
 
