@@ -26,99 +26,170 @@
 			<div class="menu-container">
 				<!--Premier bouton-->
 				<button id="command-btn" class="menu-item" onclick="DisplayModal1()">
-					<img id="commander" src="/assets/images/commander.jpg" alt="commander">
+					<img id="commander" src="/images/commander.png" alt="commander">
 					<span>Commander</span>
 				</button> 
 				<!--Deuxieme bouton-->
 				<button class="menu-item" onclick="">
-					<img src="/assets/images/a_proximiter.jpg" alt="a proximiter">
+					<img src="/images/a_proximiter.png" alt="a proximiter">
 					<span>A proximiter</span>
 				</button>
 				<!--Troisieme  bouton-->
 				<button class="menu-item" onclick="">
-					<img src="/assets/images/a-la-carte.jpg" alt="a la carte">
+					<img src="/images/a-la-carte.png" alt="a la carte">
 					<span>A la carte</span>
 				</button>
 				<!--Quatrieme bouton-->
 				<button class="menu-item" onclick="">
-					<img src="/assets/images/cinema.jpg" alt="cinéma">
+					<img src="/images/cinema.png" alt="cinéma">
 					<span>Cinema</span>
 				</button>
 			</div>
 		</section>
-	</main>
 
-	<!-- Footer----------------------------------- -->
-	<footer>
-		<div class="footer"> 
-			<p>Actualités</p>
-		</div>
-	</footer>
-
-	<!--1ere Modal-->
-	
-	<div id="modal1" class="bg-light  rounded shadow container hiddenmodal">
-		<!--header-->
-		<div class="d-flex justify-content-between align-items-center mb-3">
-			<button id="back-btn" class="text-success fw-bold text-decoration-none" onclick="Backhomepage()">Retour</button>
-			<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
-			<button class="btn btn-outline-dark position relative">
-				listes </span>
-			</button>
-		</div>
-
-		<!--Navigation-->
-		<div class="d-flex justify-content-around bg-light p-2 rounded border">
-			<button class="btn btn-success text-white w-100 mx-1">La Carte</button>
-			<button class="btn btn-outline-secondary w-100 mx-1">Mc café</button>
-			<button class="btn btn-warning w-100 mx-1">Actualités</button>
-		</div>
-		<!--Les menus-->
-		<div class="row text-center mt-4">
-			<div class="col-4 mb-3">
-				<img src="/assets/images/en_ce_moment.jpg" alt="En ce moment" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">En ce moment</p>
-			</div>
-
-			<div class="col-4 mb-3">
-				<button id="btnMenu" onclick="displayModal2()">
-					<img src="/assets/images/nos_menus.jpg" alt="Nos menu" class="img-fluid size-img">
-					<p class="fw-bold text-uppercase small mt-2">Nos menus</p>
+		<!--1ere Modal-->
+		<div id="modal1" class="bg-light  rounded shadow container hiddenmodal">
+			<!--header-->
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<button id="back-btn" class="btn btn-outline-dark position relative" onclick="Backhomepage()">Retour</button>
+				<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
+				<button class="btn btn-outline-dark position relative">
+					<span> listes </span>
 				</button>
 			</div>
-
-			<div class="col-4 mb-3">
-				<img src="/assets/images/nos_sandwishs.jpg" alt="Nos samdwich" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">Nos samdwichs</p>
+	
+			<!--Navigation-->
+			<div class="d-flex justify-content-around bg-light p-2 rounded border">
+				<button class="btn btn-success text-white w-100 mx-1">La Carte</button>
+				<button class="btn btn-outline-secondary w-100 mx-1">Mc café</button>
+				<button class="btn btn-warning w-100 mx-1">Actualités</button>
 			</div>
-			<div class="col-4 mb-3">
-				<img src="/assets/images/faim.jpg" alt="Petite faim" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">Petite faim</p>
+			<!--Les menus-->
+			<div class="row text-center mt-4 imgsize">
+				<div class="col-4 mb-3">
+					<button id="btnMenu">
+					<img src="/assets/images/en_ce_moment.jpg" alt="En ce moment" class="img-fluid size-img">
+					<p class="fw-bold text-uppercase small mt-2">En ce moment</p>
+				</button>
+				</div>
+	
+				<div class="col-4 mb-3">
+					<button id="btnMenu" onclick="displayModal2()">
+						<img src="/assets/images/nos_menus.jpg" alt="Nos menu" class="img-fluid size-img">
+						<p class="fw-bold text-uppercase small mt-2">Nos menus</p>
+					</button>
+				</div>
+	
+				<div class="col-4 mb-3">
+					<button id="btnMenu" onclick="displayModal3()">
+						<img src="/assets/images/nos_sandwishs.jpg" alt="Nos samdwich" class="img-fluid size-img">
+						<p class="fw-bold text-uppercase small mt-2">Nos samdwichs</p>
+					</button>
+				</div>
+				<div class="col-4 mb-3">
+					<button id="btnMenu" onclick="displayModal4()">
+						<img src="/assets/images/faim.jpg" alt="Petite faim" class="img-fluid size-img">
+						<p class="fw-bold text-uppercase small mt-2">Petite faim</p>
+					</button>
+				</div>
+				<div class="col-4 mb-3">
+					<button id="btnMenu" onclick="displayModal5()">
+						<img src="/assets/images/nos_boissons.jpeg" alt="Nos boissons" class="img-fluid size-img">
+						<p class="fw-bold text-uppercase small mt-2">Nos boissons</p>
+					</button>
+				</div>
+				<div class="col-4 mb-3">
+					<button id="btnMenu" onclick="displayModal6()">
+						<img src="/assets/images/nos_desserts.jpg" alt="Nos desserts" class="img-fluid size-img">
+						<p class="fw-bold text-uppercase small mt-2">Nos desserts</p>
+					</button>
+				</div>
 			</div>
-			<div class="col-4 mb-3">
-				<img src="/assets/images/nos_boissons.jpeg" alt="Nos boissons" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">Nos boissons</p>
-			</div>
-			<div class="col-4 mb-3">
-				<img src="/assets/images/nos_desserts.jpg" alt="Nos desserts" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">Nos desserts</p>
-			</div>
+	
 		</div>
-
-	</div>
-
-	<!--2eme Modal-->
-	<div id="modal2" class="bg-light rounded shadow container hiddenmodal">
-		<!--header-->
-		<div class="d-flex justify-content-between align-items-center mb-3">
-			<button class="text-success fw-bold text-decoration-none" onclick="BackModal1()">Retour</button>
-			<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
-			<button class="btn btn-outline-dark position relative">
-				<span> listes </span>
-			</button>
+	
+		<!--2eme Modal-->
+		<div id="modal2" class="bg-light rounded shadow container hiddenmodal">
+			<!--header-->
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<button class="btn btn-outline-dark position relative" onclick="BackModal1()">Retour</button>
+				<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
+				<button class="btn btn-outline-dark position relative">
+					<span> listes </span>
+				</button>
+			</div>
+			<div id="OptionMenus" class="d-flex"></div>
+			<div id="OptionBurgers" class="d-flex"></div>
+			<div id="OptionPetiteFaim" class="d-flex"></div>
+			<div id="OptionBoissons" class="d-flex"></div>
+			<div id="OptionDesserts" class="d-flex"></div>
+			<div id="OptionEnfants" class="d-flex"></div>
 		</div>
-	</div>
-
+		<!--Modal voir panier-->
+		<section class="container my-5">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header bg-warning text-white text-center">
+							<h5 class="fw-bold">Votre panier</h5>
+						</div>
+						<!--structure liste des articles dynamique-->
+						<div class="card-body">
+							<ul class="list-group list-group-flush">
+								<!--les données seront injectés dynamiquement-->
+							</ul>
+						</div>
+	
+						<div class="card-footer d-flex justify-content-between align-items-center">
+							<h5 class="fw-bold">Total : <!--Injecté dynamiquement-->
+								<span><!--Injecté dynamiquement--></span>
+							</h5>
+							<button class="btn btn-success">Commander</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<!--Modal paiement-->
+		<section class="container my-5 hiddenmodal">
+			<h2 class="text-center mb-4 text-success">Passer au paiement</h2>
+			<div class="card p-4">
+				<form>
+					<!--Nom du titulaire-->
+					<div class="mb-3">
+						<label for="nom" class="form-label">Nom du titulaire</label>
+						<input type="text" class="form-control" id="nomTitulaire" placeholder="Votre nom">
+					</div>
+	
+					<!--Numéro de carte-->
+					<div class="mb-3">
+						<label for="numberCarte" class="form-label">Numero carte</label>
+						<input type="text" class="form-control" id="numberCarte" placeholder="**** **** **** ****">
+					</div>
+	
+					<!--Date d'expriration et CVV-->
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<label for="expiration" class="form-label">Date d'expiration</label>
+							<input type="text" class="form-control" id="expiration" placeholder="MM/AA">
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="cvv" class="form-label">CVV</label>
+							<input type="text" class="form-control" id="cvv" placeholder="***">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-success py-2">Payer maintenant</button>
+				</form>
+			</div>
+		</section>
+	</main>
+		<!-- Footer----------------------------------- -->
+		<footer>
+			<div class="footer"> 
+				<p>Actualités</p>
+			</div>
+		</footer>
 </body>
 <script src="/script.js"></script>
 
