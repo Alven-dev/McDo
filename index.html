@@ -25,7 +25,7 @@
 		<section class="menu">
 			<div class="menu-container">
 				<!--Premier bouton-->
-				<button class="menu-item" onclick="DisplayModal1()">
+				<button id="command-btn" class="menu-item" onclick="DisplayModal1()">
 					<img id="commander" src="/assets/images/commander.jpg" alt="commander">
 					<span>Commander</span>
 				</button> 
@@ -57,10 +57,10 @@
 
 	<!--1ere Modal-->
 	
-	<div id="Modal1" class="bg-light  rounded shadow container hiddenmodal">
+	<div id="modal1" class="bg-light  rounded shadow container hiddenmodal">
 		<!--header-->
 		<div class="d-flex justify-content-between align-items-center mb-3">
-			<button class="text-success fw-bold text-decoration-none" onclick="Backhomepage()">Retour</button>
+			<button id="back-btn" class="text-success fw-bold text-decoration-none" onclick="Backhomepage()">Retour</button>
 			<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
 			<button class="btn btn-outline-dark position relative">
 				listes </span>
@@ -81,7 +81,7 @@
 			</div>
 
 			<div class="col-4 mb-3">
-				<button id="btnMenu" onclick="DisplayModal2()">
+				<button id="btnMenu" onclick="displayModal2()">
 					<img src="/assets/images/nos_menus.jpg" alt="Nos menu" class="img-fluid size-img">
 					<p class="fw-bold text-uppercase small mt-2">Nos menus</p>
 				</button>
@@ -108,7 +108,7 @@
 	</div>
 
 	<!--2eme Modal-->
-	<div id="Modal2" class="bg-light rounded shadow container hiddenmodal">
+	<div id="modal2" class="bg-light rounded shadow container hiddenmodal">
 		<!--header-->
 		<div class="d-flex justify-content-between align-items-center mb-3">
 			<button class="text-success fw-bold text-decoration-none" onclick="BackModal1()">Retour</button>
@@ -120,7 +120,7 @@
 	</div>
 
 </body>
-<script src="/McDo/script.js"></script>
+<script src="/script.js"></script>
 
 </html>
 

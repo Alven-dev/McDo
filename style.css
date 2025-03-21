@@ -86,3 +86,11 @@ p {
 .hiddenmodal{
     display: none;
 }
+
+#modal1, #modal2 {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    height: 100vh;
+    background-color: white;
+}
