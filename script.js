@@ -15,16 +15,25 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
 
 //SCRIPT
 
-ModalCommander=document.getElementById("commander")
+//ModalCommander=document.getElementById("commander")
 
 
 //FUNCTIONS
 
-function AfficherModal1(){
-    let ModalCommander=document.getElementById("commander")
+function DisplayModal1(){
+    document.getElementById("Modal1").classList.remove("hiddenmodal")
+}
+function Backhomepage(){
+    document.getElementById("Modal1").classList.add("hiddenmodal")
 }
 
+function displayModal2(){
+    document.getElementById("Modal2").classList.remove("hiddenmodal")
+}
 
+function BackModal1(){
+    document.getElementById("Modal2").classList.add("hiddenmodal")
+}
 /*Code card minature
 <div class="card" style="width: 18rem;">
     <img src="" class="card-img-top" alt="Image du produit">
