@@ -12,57 +12,55 @@
 <body>
 
 	<!-- Header & nav -------------------------------- -->
-	 <header>
+	<header>
 		<nav class="container d-flex justify-content-between align-items-center">
-			<img src="/assets/images/section-1/mcdonalds-logo-0.png" alt="Mcdo" class="size-logo">
+			<img src="/assets/images/mcdonalds-logo-0.png" alt="Mcdo" class="size-logo">
 			<h1>Bienvenue chez Mcdo</h1>
 			<i class="fa-solid fa-magnifying-glass"></i>
 		</nav>
-
 	</header>
 
-	<!-- !-- Main--------------------------------------- -- -->
+	<!-- Main--------------------------------------- -->
 	<main>
 		<section class="menu">
 			<div class="menu-container">
-				<!-- Premier bouton -->
-				<a href="#" class="menu-item">
-					<img src="/assets/images/section-1/commander.jpg" alt="commander">
+				<!--Premier bouton-->
+				<button class="menu-item" onclick="DisplayModal1()">
+					<img id="commander" src="/assets/images/commander.jpg" alt="commander">
 					<span>Commander</span>
-				</a>
-				<!-- Deuxieme bouton -->
-				<a href="#" class="menu-item">
-					<img src="/images/section-1/a proximiter.jpg" alt="a proximiter">
+				</button> 
+				<!--Deuxieme bouton-->
+				<button class="menu-item" onclick="">
+					<img src="/assets/images/a_proximiter.jpg" alt="a proximiter">
 					<span>A proximiter</span>
-				</a>
-				<!-- --Troisieme  bouton -->
-				<a href="#" class="menu-item">
-					<img src="/images/section-1/a-la-carte.jpg" alt="a la carte">
+				</button>
+				<!--Troisieme  bouton-->
+				<button class="menu-item" onclick="">
+					<img src="/assets/images/a-la-carte.jpg" alt="a la carte">
 					<span>A la carte</span>
-				</a>
-				<!-- --Quatrieme bouton-- -->
-				<a href="#" class="menu-item">
-					<img src="/images/section-1/cinema.jpg" alt="cinéma">
+				</button>
+				<!--Quatrieme bouton-->
+				<button class="menu-item" onclick="">
+					<img src="/assets/images/cinema.jpg" alt="cinéma">
 					<span>Cinema</span>
-				</a>
+				</button>
 			</div>
 		</section>
 	</main>
 
-	<!-- <-- Footer----------------------------------- -- -->
-
+	<!-- Footer----------------------------------- -->
 	<footer>
-		<div class="footer">
+		<div class="footer"> 
 			<p>Actualités</p>
 		</div>
 	</footer>
 
-		<!-- 1ere Modal -->
-
-	<!--header-->
-	<div class="bg-light  rounded shadow container">
+	<!--1ere Modal-->
+	
+	<div id="Modal1" class="bg-light  rounded shadow container hiddenmodal">
+		<!--header-->
 		<div class="d-flex justify-content-between align-items-center mb-3">
-			<a href="#" class="text-success fw-bold text-decoration-none"> Retour</a>
+			<button class="text-success fw-bold text-decoration-none" onclick="Backhomepage()">Retour</button>
 			<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
 			<button class="btn btn-outline-dark position relative">
 				listes </span>
@@ -83,8 +81,10 @@
 			</div>
 
 			<div class="col-4 mb-3">
-				<img src="/assets/images/nos_menus.jpg" alt="Nos menu" class="img-fluid size-img">
-				<p class="fw-bold text-uppercase small mt-2">Nos menus</p>
+				<button id="btnMenu" onclick="DisplayModal2()">
+					<img src="/assets/images/nos_menus.jpg" alt="Nos menu" class="img-fluid size-img">
+					<p class="fw-bold text-uppercase small mt-2">Nos menus</p>
+				</button>
 			</div>
 
 			<div class="col-4 mb-3">
@@ -107,7 +107,21 @@
 
 	</div>
 
+	<!--2eme Modal-->
+	<div id="Modal2" class="bg-light rounded shadow container hiddenmodal">
+		<!--header-->
+		<div class="d-flex justify-content-between align-items-center mb-3">
+			<button class="text-success fw-bold text-decoration-none" onclick="BackModal1()">Retour</button>
+			<img src="/assets/images/mcdonalds-logo-0.png" alt="mcdo" class="img-fluid size-logo">
+			<button class="btn btn-outline-dark position relative">
+				<span> listes </span>
+			</button>
+		</div>
+	</div>
+
 </body>
-<script src="/script.js"></script>
+<script src="/McDo/script.js"></script>
 
 </html>
+
+
