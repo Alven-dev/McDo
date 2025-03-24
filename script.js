@@ -13,22 +13,11 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
 
     .then(function(produits) { /*On stock ces données dans le tableai "données"*/
     donnees = produits;
-    // 
-    // AfficherBoissons();
-    // AfficherBurger();
-    // AfficherDesserts();
-    // AfficherEnfants();
-    // AfficherPetiteFaim();
     })
 
     .catch(function(error) { /* Si jamais la recuperation ne fonctionne pas */
     console.error("Erreur lors du chargement du fichier JSON :", error); /*message d'erreur*/
     });
-
-//SCRIPT
-
-//ModalCommander=document.getElementById("commander")
-
 
 //FUNCTIONS
 
@@ -39,6 +28,8 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
     let cmdBtn = document.getElementById("command-btn");
     let backBtn = document.getElementById("back-btn");
     let btnMenu = document.getElementById("btnMenu");
+
+    // 1. afficher le modalOne 
 
     function DisplayModal1() {
         cmdBtn.addEventListener("click", function () {
@@ -125,7 +116,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.burgers[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.burgers[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.burgers[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.burgers[i].price} euros</p>
                 <button class="btn btn-primary" onclick="ajouterAuPanier('${donnees.burgers[i].name}', ${donnees.burgers[i].price})">Commander</button>
             </div>
         </div>
@@ -142,7 +133,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.sides[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.sides[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.sides[i].price} euros</p>
                 <button class="btn btn-primary" onclick="ajouterAuPanier('${donnees.sides[i].name}', ${donnees.sides[i].price})">Commander</button>
             </div>
         </div>
@@ -159,7 +150,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.drinks[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.drinks[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.drinks[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.drinks[i].price} euros</p>
                 <button class="btn btn-primary" onclick="ajouterAuPanier('${donnees.drinks[i].name}', ${donnees.drinks[i].price})">Commander</button>
             </div>
         </div>
@@ -176,7 +167,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.desserts[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.desserts[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.desserts[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.desserts[i].price} euros</p>
                 <button class="btn btn-primary" onclick="ajouterAuPanier('${donnees.desserts[i].name}', ${donnees.desserts[i].price})">Commander</button>
             </div>
         </div>
@@ -193,7 +184,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.happyMeal[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.happyMeal[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.happyMeal[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.happyMeal[i].price} euros</p>
                 <button class="btn btn-primary" onclick="ajouterAuPanier('${donnees.happyMeal[i].name}', ${donnees.happyMeal[i].price})">Commander</button>
             </div>
         </div>
@@ -242,7 +233,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             <img src="/${donnees.menus[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center align">
                 <h5 class="card-title">${donnees.menus[i].name}</h5>
-                <p class="card-text fw-bold">Prix: ${donnees.menus[i].price} pessos</p>
+                <p class="card-text fw-bold">Prix: ${donnees.menus[i].price} euros</p>
                 <button id="${donnees.menus[i].id}" class="btn btn-primary" onclick="ProcessMenuOrderSides(${donnees.menus[i].main})">Commander</button>
             </div>
         </div>
@@ -299,6 +290,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
     }
     
     // Fonction pour filtrer sur les boissons offerte en focntion du burger choisi
+    
 
     function ProcessMenuOrderDrinks(id){
         optionMenus.innerHTML = "";

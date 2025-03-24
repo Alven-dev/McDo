@@ -1,0 +1,14 @@
+//Conceptualisation choix Menu
+    //Creation d'un élément de la forme menutobasket 
+    /{
+        burger: menuchoisi.id,
+        price: menuchoisi.price,
+        side: sidechoisi.id,
+        drink: drinkchoisi.id
+    }/
+   //lorsqu'on clique sur commander sur le modal du choix du burger, on envoit le menu choisi dans menuchoisi pour que le tableau recupere les bonnes datas
+   //lorsqu'on clique sur commander sur le modal du choix du side, on envoit le side choisi dans sidechoisi pour que le tableau recupere les bonnes datas
+   //lorsqu'on clique sur commander sur le modal du choix de la boisson, on envoit la boisson choisie dans drinkchoisi pour que le tableau recupere les bonnes datas
+    // Ensuite on envoit l'élément au panier. Rajouter une condition pour l'innerHTML
+    // Si l'élément menuschoisi.id != "" alors rajouter une ligne pour afficher le side du menu et une une ligne pour rajouter le drink du menu.
+    // Ensuite on rempli le planier nom = menuchoisi.id. Prix = menuchoisi.price. Side = sidechoisi.id Drink = drinkchoisi.id
