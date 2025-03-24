@@ -22,7 +22,7 @@
 
 	<!-- Main--------------------------------------- -->
 	<main>
-		<section class="menu">
+		<section id="main-menu" class="menu">
 			<div class="menu-container">
 				<!--Premier bouton-->
 				<button id="command-btn" class="menu-item" onclick="DisplayModal1()">
@@ -67,7 +67,7 @@
 			<!--Les menus-->
 			<div class="row text-center mt-4 imgsize">
 				<div class="col-4 mb-3">
-					<button id="btnMenu">
+					<button>
 					<img src="/assets/images/en_ce_moment.jpg" alt="En ce moment" class="img-fluid size-img">
 					<p class="fw-bold text-uppercase small mt-2">En ce moment</p>
 				</button>
@@ -126,7 +126,7 @@
 			<div id="OptionEnfants" class="d-flex"></div>
 		</div>
 		<!--Modal voir panier-->
-		<section class="container my-5">
+		<section id="panier-modal" class="container my-5 hiddenmodal">
 			<div class="row justify-content-center">
 				<div class="col-md-12">
 					<div class="card">
@@ -135,16 +135,16 @@
 						</div>
 						<!--structure liste des articles dynamique-->
 						<div class="card-body">
-							<ul class="list-group list-group-flush">
+							<ul id="panier-list" class="list-group list-group-flush">
 								<!--les données seront injectés dynamiquement-->
 							</ul>
 						</div>
 	
 						<div class="card-footer d-flex justify-content-between align-items-center">
-							<h5 class="fw-bold">Total : <!--Injecté dynamiquement-->
+							<h5 id="total-prix" class="fw-bold">Total : <!--Injecté dynamiquement-->
 								<span><!--Injecté dynamiquement--></span>
 							</h5>
-							<button class="btn btn-success">Commander</button>
+							<button id="commander-btn" class="btn btn-success">Commander</button>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@
 		</section>
 	
 		<!--Modal paiement-->
-		<section class="container my-5 hiddenmodal">
+		<section id="paiement-modal" class="container my-5 hiddenmodal">
 			<h2 class="text-center mb-4 text-success">Passer au paiement</h2>
 			<div class="card p-4">
 				<form>
@@ -179,7 +179,7 @@
 							<input type="text" class="form-control" id="cvv" placeholder="***">
 						</div>
 					</div>
-					<button type="submit" class="btn btn-success py-2">Payer maintenant</button>
+					<button type="submit" id="payer-btn" class="btn btn-success py-2">Payer maintenant</button>
 				</form>
 			</div>
 		</section>
@@ -194,5 +194,3 @@
 <script src="/script.js"></script>
 
 </html>
-
-
