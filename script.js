@@ -35,9 +35,9 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
         cmdBtn.addEventListener("click", function () {
             if (modalOne.classList.contains("hiddenmodal")) {
                 modalOne.classList.remove("hiddenmodal");
-                setTimeout(() => {
+                // setTimeout(() => {
                     modalOne.classList.add("opacitymodal");
-                }, 100);
+                // }, 100);
             }
         });
     }
@@ -317,6 +317,9 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
         ProcessMenuOrderSides(id);
         ProcessMenuOrderDrinks(id);
     }
+
+
+    // MIKO //
 
 
 let panier = [];
