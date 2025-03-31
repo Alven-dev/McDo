@@ -113,7 +113,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.burgers[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.burgers[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.burgers[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.burgers[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.burgers[i].price} euros</p>
@@ -130,7 +130,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.sides[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.sides[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.sides[i].price} euros</p>
@@ -147,7 +147,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.drinks[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.drinks[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.drinks[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.drinks[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.drinks[i].price} euros</p>
@@ -164,7 +164,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.desserts[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.desserts[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.desserts[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.desserts[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.desserts[i].price} euros</p>
@@ -181,7 +181,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.happyMeal[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.happyMeal[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.happyMeal[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.happyMeal[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.happyMeal[i].price} euros</p>
@@ -198,7 +198,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div class="card" style="width: 18rem;">
-            <img src="/${donnees.drinks[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.drinks[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.drinks[i].name}</h5>
                 <button id="cmdbutton" class="btn btn-primary" onclick="">Commander</button>
@@ -214,7 +214,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.sides[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.sides[i].name}</h5>
                 <button class="btn btn-primary" onclick="ProcessMenuOrderDrinks(BurgerId)">Commander</button>
@@ -230,7 +230,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.menus[i].main} class="card" style="width: 18rem;">
-            <img src="/${donnees.menus[i].image}" class="card-img-top" alt="Image du produit">
+            <img src="${donnees.menus[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center align">
                 <h5 class="card-title">${donnees.menus[i].name}</h5>
                 <p class="card-text fw-bold">Prix: ${donnees.menus[i].price} euros</p>
