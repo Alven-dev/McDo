@@ -214,7 +214,7 @@ fetch('mcdo.json') /* On lance la requete en AJAX pour recuperer le fichier JSON
             let menu=document.createElement("div")
             menu.innerHTML = `
             <div id=${donnees.sides[i].id} class="card" style="width: 18rem;">
-            <img src="/${donnees.sides[i].image}" aclass="card-img-top" alt="Image du produit">
+            <img src="/${donnees.sides[i].image}" class="card-img-top" alt="Image du produit">
             <div class="card-body text-center">
                 <h5 class="card-title">${donnees.sides[i].name}</h5>
                 <button class="btn btn-primary" onclick="ProcessMenuOrderDrinks(BurgerId)">Commander</button>
